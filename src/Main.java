@@ -1,26 +1,28 @@
 import clavier.In;
 
 public class Main {
-    private static final String USERNAME = "admin";
-    private static final String PASSWORD = "admin";
 
     public static void main(String[] args) {
-        System.out.println(
-                "m -> Bonjour" +
-                "\np -> maison" +
-                "\nw -> pirate"
-        );
-         String lettre = In.readString();
-         switch (lettre) {
-             case "m":
-                 System.out.println("Bonjour");
-                 break;
-             case "p":
-                 System.out.println("maison");
-                 break;
-             case "w":
-                 System.out.println("pirate");
-                 break;
-         }
+
+        int valeur = 0;
+        while (valeur != 1 && valeur != 2 && valeur != 3) {
+            System.out.println(
+                    "1 -> Maison\n" +
+                            "2 -> Battaille\n" +
+                            "3 -> Plag > Jesterio²"
+            );
+            valeur = In.readInteger();
+            switch (valeur) {
+                case 1:
+                    System.out.println("Maison");
+                    break;
+                case 2:
+                    System.out.println("Battaille");
+                    break;
+                case 3:
+                    System.out.println("ntm");
+                    break;
+            }
+        }
     }
 }
