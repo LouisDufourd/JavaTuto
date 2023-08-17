@@ -6,8 +6,8 @@ public class Eleve {
 
     /**
      * @param nom     Le nom de l'élève
-     * @param prenom: Le prénom de l'élève
-     * @param note:   La note de l'élève
+     * @param prenom  Le prénom de l'élève
+     * @param note    La note de l'élève
      * @return        Retourne l'élève
      */
     public Eleve(String nom, String prenom, double note) {
@@ -35,6 +35,14 @@ public class Eleve {
      */
     public double getNote() {
         return note;
+    }
+
+    /**
+     *
+     * @param note la note que l'on veut donner à l'élève
+     */
+    public void setNote(double note) {
+        this.note = note;
     }
 
     @Override
