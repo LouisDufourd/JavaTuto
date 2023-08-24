@@ -24,7 +24,7 @@ public class WriteFile {
 
     public static void writeTextFile(Path file, String text) throws IOException {
         if(!Files.exists(file)) { //vérifie si le fichier n'existe pas
-            Files.createFile(file); //si oui, on crée un fichier
+            Files.createFile(file); //s'il n'existe pas, on crée un fichier
         }
         OutputStream os = Files.newOutputStream(file); //on ouvre un flux pour lire
         OutputStreamWriter osw = new OutputStreamWriter(os); //on ouvre un flux qui va lire le texte dans le fichier
